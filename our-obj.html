@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ЛЭМ</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+  <link rel="stylesheet" href="fonts/stylesheet.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo-outer">
+            <a href="index.html"><img class='header__logo' src="images/logo.svg" alt="logo"></a>
+          </div>
+          <div class="header__menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="header__navs">
+            <nav class="header__menu-nav">
+              <ul class='header__menu'>
+                <li class="header__menu-item">
+                  <button class="header__menu-link header__submenu-button">О компании</button>
+                  <ul class="header__submenu">
+                    <li class="header__submenu-item">
+                      <a class="header__submenu-link" href="smi.html">СМИ о нас</a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a class="header__submenu-link" href="#">Новости компании</a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a class="header__submenu-link" href="awards.html">награды и грамоты</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="header__menu-item"><a href="#" class="header__menu-link">Направление
+                    деятельности</a></li>
+                <li class="header__menu-item"><a href="our-obj.html" class="header__menu-link">Наши объекты</a></li>
+                <li class="header__menu-item"><a href="files.html" class="header__menu-link">Документация</a></li>
+                <li class="header__menu-item"><a href="contacts.html" class="header__menu-link">Контакты</a></li>
+              </ul>
+            </nav>
+            <nav class="header__lang-nav">
+              <button class="header__lang ru active">РУС</button>
+              <button class="header__lang en">ENG</button>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+
+      <div class="container">
+        <div class="content content-second-pages">
+          <section class="our-obj section-padding">
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="index.html">Главная</a>
+              </li>
+            </ul>
+            <h1 class="our-obj__title">
+              наши объекты
+            </h1>
+            <select 
+            name='Select'
+            class="our-obj__select" 
+            onchange="window.location.href = this.options[this.selectedIndex].value"
+            >
+              <option value="Электрические подстанции"></option>
+              <option value="substations.html">Электрические подстанции</option>
+              <option value="#">Трансформаторы</option>
+              <option value="#">Станции обслуживания</option>
+              <option value="substations.html">Электрические подстанции</option>
+              <option value="#">Трансформаторы</option>
+              <option value="#">Станции обслуживания</option>
+            </select>
+            <div class="our-obj__img-outer">
+              <img class="our-obj__img" src="images/our-obj/map.webp" alt="map">
+            </div>
+          </section>
+            <div class="our-obj__slider swiper-container">
+              <div class="our-obj__slider-inner swiper-wrapper">
+                <div class="our-obj__slider-slide swiper-slide">
+                  <div class="our-obj__slider-slide-inner map-left">
+                    <img src="images/our-obj/map-left.webp" alt="map-left">
+                  </div>
+                </div>
+                <div class="our-obj__slider-slide swiper-slide">
+                  <div class="our-obj__slider-slide-inner map-right">
+                    <img src="images/our-obj/map-right.webp" alt="map-right">
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+          <div class="footer__rectangle">
+              <img class='footer__rectangle-img' src="images/index/rect.svg" alt="rect">
+          </div>
+          <div class="footer__inner">
+              <div class="footer__logo-outer">
+                  <img class='footer__logo' src="images/logo.svg" alt="">
+              </div>
+              <div class="footer__info">
+                  <nav class="footer__menu-nav">
+                      <ul class="footer__menu">
+                          <li class="footer__menu-item item1"><a href="index.html" class="footer__menu-link">о
+                                  компании</a></li>
+                          <li class="footer__menu-item"><a href="#" class="footer__menu-link">Направление
+                                  деятельности</a></li>
+                          <li class="footer__menu-item"><a href="files.html" class="footer__menu-link">Документация</a>
+                          </li>
+                          <li class="footer__menu-item"><a href="contacts.html"
+                                  class="footer__menu-link">Контакты</a></li>
+                      </ul>
+                  </nav>
+                  <div class="footer__privacy">
+                      <div class="footer__privacy-top">
+                          2021 © ООО «ЛЭМ»
+                      </div>
+                      <div class="footer__privacy-bottom">
+                          <a class="footer__privacy-bottom-link" href="#">Политика в области обработки
+                              персональных данных</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  </div>
+
+  <script src="js/video.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ЛЭМ</title>
+  <link rel="stylesheet" href="fonts/stylesheet.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo-outer">
+            <a href="index.html"><img class='header__logo' src="images/logo.svg" alt="logo"></a>
+          </div>
+          <div class="header__menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="header__navs">
+            <nav class="header__menu-nav">
+              <ul class='header__menu'>
+                <li class="header__menu-item">
+                  <button class="header__menu-link header__submenu-button">О компании</button>
+                  <ul class="header__submenu">
+                    <li class="header__submenu-item">
+                      <a class="header__submenu-link" href="smi.html">СМИ о нас</a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a class="header__submenu-link" href="#">Новости компании</a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a class="header__submenu-link" href="awards.html">награды и грамоты</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="header__menu-item"><a href="#" class="header__menu-link">Направление
+                    деятельности</a></li>
+                <li class="header__menu-item"><a href="our-obj.html" class="header__menu-link">Наши объекты</a></li>
+                <li class="header__menu-item"><a href="files.html" class="header__menu-link">Документация</a></li>
+                <li class="header__menu-item"><a href="contacts.html" class="header__menu-link">Контакты</a></li>
+              </ul>
+            </nav>
+            <nav class="header__lang-nav">
+              <button class="header__lang ru active">РУС</button>
+              <button class="header__lang en">ENG</button>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+
+      <div class="container">
+        <div class="content content-second-pages">
+          <section class="contacts section-padding">
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="index.html">Главная</a>
+              </li>
+            </ul>
+            <h1 class="contacts__title">Контакты</h1>
+            <nav class="contacts__data-nav">
+              <ul class="contacts__dataOne">
+                <li class="contacts__dataOne-item">
+                  E-mail
+                </li>
+                <li class="contacts__dataOne-item">
+                  Телефон
+                </li>
+                <li class="contacts__dataOne-item">
+                  Факс
+                </li>
+              </ul>
+              <ul class="contacts__dataTwo">
+                <li class="contacts__dataTwo-item">
+                  <a class="contacts__dataTwo-link e-mail" href="mailto:info@lem-ltd.ru">info@lem-ltd.ru</a>
+                </li>
+                <li class="contacts__dataTwo-item">
+                  <a class="contacts__dataTwo-link" href="tel:+74996840016">+7 (499) 684-00-16</a>
+                </li>
+                <li class="contacts__dataTwo-item">
+                  <a class="contacts__dataTwo-link" href="tel:+74952405885">+7 (495) 240-58-85</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="contacts__adress">
+              108811, г. Москва, поселение Московский, Киевское шоссе, 22-й км., домовладение 4, строение 1, блок А,
+              офисный подъезд 9, этаж 9 (Бизнес парк Румянцево).
+            </div>
+          </section>
+          <section class="form__outer">
+            <h3 class="form__title">
+              Напишите нам
+            </h3>
+            <form class="form" action="mail.php" enctype="multipart/form-data" method="POST">
+              <input class="form__input" type="text" placeholder="Ваше имя" name='name' data-validate-field='name'>
+              <input class="form__input" type="text" placeholder="Ваше e-mail или телефон" name='mailOrPhone'
+                data-validate-field='mailOrPhone'>
+              <textarea class='form__textarea' placeholder="Текст сообщения" name='text'></textarea>
+              <button class="form__button" type='submit'>Отправить</button>
+            </form>
+          </section>
+          <div class="map">
+            <iframe class='map__iframe'
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3A6f6b0151ec373ad169d510b41ec48f32c63150f8caab7b456ce0be77041f836e&amp;source=constructor"
+              max-width='1040px' width="100%" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__rectangle">
+          <img class='footer__rectangle-img' src="images/index/rect.svg" alt="rect">
+        </div>
+        <div class="footer__inner">
+          <div class="footer__logo-outer">
+            <img class='footer__logo' src="images/logo.svg" alt="">
+          </div>
+          <div class="footer__info">
+            <nav class="footer__menu-nav">
+              <ul class="footer__menu">
+                <li class="footer__menu-item item1"><a href="index.html" class="footer__menu-link">о
+                    компании</a></li>
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Направление
+                    деятельности</a></li>
+                <li class="footer__menu-item"><a href="files.html" class="footer__menu-link">Документация</a>
+                </li>
+                <li class="footer__menu-item"><a href="contacts.html" class="footer__menu-link">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="footer__privacy">
+              <div class="footer__privacy-top">
+                2021 © ООО «ЛЭМ»
+              </div>
+              <div class="footer__privacy-bottom">
+                <a class="footer__privacy-bottom-link" href="#">Политика в области обработки
+                  персональных данных</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- модальные окна -->
+  <div class="modals">
+    <div class="thanks">
+      <button class="thanks__close">
+        <img class='thanks__close-img' src="images/contacts/close.svg" alt="close">
+      </button>
+      <div class="thanks__img-outer">
+        <img class="thanks__img" src="images/contacts/okay.svg" alt="image">
+      </div>
+      <h3 class="thanks__title">
+        Ваше сообщение успешно отправлено
+      </h3>
+      <p class="thanks__subtitle">
+        Мы свяжемся с вами по оставленным контактам
+      </p>
+    </div>
+  </div>
+
+
+
+
+  <script src="js/just-validate.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
